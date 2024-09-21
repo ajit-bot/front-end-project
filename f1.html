@@ -1,0 +1,266 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="bootstrap.min.js"></script>
+        <style>
+
+     
+            .sidebar {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 200px;     
+                height: 100%;
+                background-color: black;
+                transition: transform 0.3s ease;
+            }
+            .sidebar.hidden {
+                transform: translateX(-100%);
+            }
+            .sidebar .links a {
+                display: block;
+                padding: 10px;
+                color: white;
+                border-bottom: 1px solid;
+            }
+            .sidebar-toggle-btn {
+                position: absolute;
+                width: 40px;
+                height: 40px;
+                top: 10px;
+                right: -50px;
+                cursor: pointer;
+            }
+            .sidebar-toggle-btn span {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                height: 5px;
+                background-color: black;
+            }
+            .sidebar-toggle-btn span:nth-child(1) {
+                top: 10%;
+            }
+            .sidebar-toggle-btn span:nth-child(3) {
+                top: 90%;
+            }
+        
+         
+            body{
+                background-color: crimson;
+            }
+h1{
+    color: azure;
+}
+   
+.logo img:hover{
+    filter:invert(100%);
+    transition:1s;
+}
+#f4{
+    height: 750px;
+    width: 800px;
+    border:1px solid black;
+   margin: auto;
+ margin-top: 400px;
+    background-color: burlywood;
+    color: azure;
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+}
+
+
+
+
+.card{
+    margin-top: 150px;
+}
+.ajit{
+    width: 100px;
+   margin-right: 50px;
+   
+}
+#button{
+    width: 120px;
+    height: 35px;
+    border: 2px solid black;
+    
+}
+.a1{
+    width: 400px;
+  
+}
+input{
+    margin-bottom: 7px;
+}
+
+
+.links a:visited{
+    color: azure;
+}
+.links a:hover{
+color:gold;
+}
+.links a:active{
+    color:blueviolet;
+}
+ 
+
+
+      </style>
+        
+    </head> 
+    <body>
+      
+        <div class="sidebar hidden" id="sidebar">
+            <div id="t1" class="sidebar-toggle-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="links">
+                <a href="#About Us">About Us</a>
+                <a href="#Menu">Menu</a>
+                <a href="#Contact Us">Contact Us</a>
+                <a href="#Booking Form">Booking Form</a>
+            </div>
+        </div>
+       
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                document.getElementById("t1").addEventListener("click", function() {
+                    var sidebar = document.getElementById("sidebar");
+                    sidebar.classList.toggle("hidden");
+                });
+            });
+        </script>
+
+
+
+
+</div><center><h1 class="logo">HOTEL MRIGNAYANI <img src="images/mriganayani logo.png" alt="" height="60" class="rounded-circle"></h1></center>
+    
+    <center><a name="About Us"></a><div class="card bg-dark text-white" style="width: 700px;height: 400px;">
+        <div class="card-header"><h4><span style="color: darkgoldenrod;">About</span> Us</h4></div>
+      
+        <div class="card-body">OUR HOTEL<br><span style="color: darkgoldenrod;">STORY</span><br><br>since 20 years back we have started with small restaurant <br>and now we come up with 24 Rooms among those all Deluxe<br> Rooms,with provide banquet facilities.</div>
+     
+    </div>
+    </center><br>
+
+<center><a name="Menu"></a><div class="card" style="width: 700px;">
+    <div class="card-header"><b>Burger</b></div>
+    <img class="card-img-top" src="images/burger.webp"  alt="card image" >
+   
+    <div class="card-footer"><div class="logo"><b>ingrediants-</b>&nbsp;
+        
+        <img src="images/Onion-Red.webp" alt="" height="30" class="rounded-circle">
+        <img src="images/american cheese.webp" alt="" height="30" class="rounded-circle">
+        <img src="images/ketchup.webp" alt="" height="30" class="rounded-circle">
+        <img src="images/homemade-burger-buns-SQUARE-1536x1536.webp" alt="" height="30" class="rounded-circle">
+        <img src="images/winner-clean-cut-slice-of-tomato-png-1534_819-900x480.png" alt="" height="30" class="rounded-circle">
+       </div>
+</div>
+</center><br>
+<center><div class="card" style="width: 700px;">
+    <div class="card-header"><b>Pizza</b></div>
+    <img class="card-img-top" src="images/2652401_QFSSL_SupremePizza_00072-d910a935ba7d448e8c7545a963ed7101.webp"  alt="card image" height="500px">
+   
+    <div class="card-footer"><div class="logo"><b>ingrediants-</b>&nbsp;
+        <img src="images/winner-clean-cut-slice-of-tomato-png-1534_819-900x480.png" alt="" height="30" class="rounded-circle">
+        <img src="images/mashroom.jpg" alt="" height="30" class="rounded-circle">
+        <img src="images/american cheese.webp" alt="" height="30" class="rounded-circle">
+        <img src="images/Marinated-Olives-003.webp" alt="" height="30" class="rounded-circle">
+        <img src="images/Onion-Red.webp" alt="" height="30" class="rounded-circle"></div>
+</div>
+</center><br>
+<center><div class="card" style="width: 700px;">
+    <div class="card-header"><b>Noodles</b></div>
+    <img class="card-img-top" src="images/vegetable-noodles.jpg"  alt="card image">
+    
+    <div class="card-footer"><div class="logo"><b>ingrediants-</b>&nbsp;<img src="images/Onion-Red.webp" alt="" height="30" class="rounded-circle">
+        <img src="images/fresh-garlic-500x500.webp" alt="" height="30" class="rounded-circle">
+        <img src="images/PPCONT_009116_fullsize.jpg.webp" alt="" height="30" class="rounded-circle">
+        <img src="images/download.jpeg" alt="" height="30" class="rounded-circle"></div>
+</div>
+</center><br>
+<center><div class="card" style="width: 700px;">
+    <div class="card-header"><b>Manchurian</b></div>
+    <img class="card-img-top" src="images/cabbage_manchurian_dry.webp"  alt="card image" height="500px">
+   
+    <div class="card-footer">
+        <div class="logo"><b>ingrediants-</b>&nbsp;<img src="images/ketchup.webp" alt="" height="30" class="rounded-circle">
+            <img src="images/fresh-garlic-500x500.webp" alt="" height="30" class="rounded-circle">
+            <img src="images/PPCONT_009116_fullsize.jpg.webp" alt="" height="30" class="rounded-circle">
+            <img src="images/how-to-vacuum-seal-scallions-1705022382.jpg" alt="" height="30" class="rounded-circle">
+            <img src="images/cauliflower.jpg" alt="" height="30" class="rounded-circle"></div>  
+</div>
+</center><br>
+<center><div class="card bg-success text-white" style="width: 700px;">
+    <div class="card-header"><a name="Contact Us"></a><h4>Contact Us</h4></div>
+  
+    <div class="card-body"><h6>PHONE NO-9027777777</h6><br><h6>Email-hmrignayani@gmail.com</h6><br><h6>Address-x-89/90,Maharana Pratap Chowk,Bajaj Nagar,Waluj,Wadgaon Kolhati,Maharashtra 431136</h6></div>
+    <div class="card-footer"><div class="logo"><h6>Connect with us:-</h6> <img src="images/fb image.jpg" alt="" height="30" class="rounded-circle">
+        <img src="images/instagram.jpg" alt="" height="30" class="rounded-circle">
+        <img src="images/Logo_of_Twitter.svg.png" alt="" height="30" class="rounded-circle">
+        <img src="images/LinkedIn_logo_initials.png.webp" alt="" height="30" class="rounded-circle"></div>
+</div>
+</center><br>
+   
+       
+    </form>
+        </table>
+       <br></div>
+   
+</div> 
+</center><br>
+
+<form action="" class="was-validated">
+    
+    <div id="f4">
+    <center><a name="Booking Form"></a><br><h1>Booking form</h1> <br><br><div class="a1"><div class="form-group"> <label for="name"><b style="color: black;">Name:</b></label> 
+         <input type="text" placeholder="enter your name" class="form-control" id="name" required>
+         <div class="valid-feedback">Valid&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+         <div class="invalid-feedback">Please fill out this feedback&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+     
+                       
+         <div class="form-group"> <label for="email"><b style="color: black;">Email:</b></label>
+            <input type="email" placeholder="enter your email" class="form-control" id="email" required>
+        <div class="valid-feedback">Valid&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div class="invalid-feedback">Please fill out this feedback&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    
+         <div class="form-group"><label for="city"><b style="color: black;">City:</b></label>
+            <input type="text" placeholder="enter your city" class="form-control" id="city" required>
+        <div class="valid-feedback">Valid&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <div class="invalid-feedback">Please fill out this feedback &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+            <div class="form-group"> <label for="Address"><b style="color: black;">Address:</b></label>
+                <input  type="text" placeholder="enter your address" class="form-control" id="Address" required>
+            <div class="valid-feedback">Valid&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+            <div class="invalid-feedback">Please fill out this feedback&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </div>
+            <div class="form-group">  <label for="Phonenumber"><b style="color: black;">Phonenumber:</b></label>
+                <input type="text" placeholder="enter your phonenumber" class="form-control" id="Phonenumber" required>
+                <div class="valid-feedback">Valid&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                <div class="invalid-feedback">Please fill out this feedback&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </div><br> 
+        <div class="ajit"><br><br><input type="button"  value="Book Now" id="button" onclick="">
+           
+   
+                           
+    
+      
+    
+</center>
+</div>
+</table>
+
+</form>
+
+
+
+
+
+
+    </body>
+</html>
